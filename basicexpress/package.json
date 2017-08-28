@@ -1,0 +1,23 @@
+{
+  "name": "basicexpress",
+  "version": "1.0.0",
+  "description": "express nodejs web",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.4",
+    "body-parser":"*",
+    "jade":"*",
+    "nodemailer":"*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "web"
+  ],
+  "author": "",
+  "license": "ISC"
+}
