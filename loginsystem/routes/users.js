@@ -33,7 +33,7 @@ router.get('/login', function (req, res, next) {
 });
 router.post('/login', passport.authenticate('local', {
   failureRedirect: '/users/login',
-  failureLogin: 'Invalid pass or username'
+  failureFlash: 'Invalid pass or username'
 }), function (req, res) {
   console.log(req);
   // If this function gets called, authentication was successful.
@@ -46,7 +46,7 @@ passport.serializeUser(function (user, done) {
 });
 
 passport.deserializeUser(function (id, done) {
-  User.getUserById(id, function (err, user) {
+  User.getUserByid(id, function (err, user) {
     done(err, user);
   });
 });

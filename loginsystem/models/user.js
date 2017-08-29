@@ -25,7 +25,7 @@ var User = module.exports = mongoose.model('User', userSchema);
 module.exports.getUserByid = (id, cb) => {
     User.findById(id, cb);
 }
-module.exports.getUserByusername = (username, cb) => {
+module.exports.getUserByusername  = (username, cb) => {
     var query = {
         username: username
     };
